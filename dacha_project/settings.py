@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'category',
     'drf_yasg',
-    'banner'
+    'banner',
+    'plans',
+    'deep_translator',
 ]
 
 MIDDLEWARE = [
