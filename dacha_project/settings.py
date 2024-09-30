@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'category',
-    'drf_yasg'
+    'drf_yasg',
+    'banner'
 ]
 
 MIDDLEWARE = [
