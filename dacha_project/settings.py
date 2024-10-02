@@ -24,7 +24,7 @@ INSTALLED_APPS = [
     'category',
     'banner',
     'plans',
-    'deep_translator'
+    'regions',
 ]
 
 MIDDLEWARE = [
