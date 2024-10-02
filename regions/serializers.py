@@ -6,7 +6,7 @@ from .models import Province, District, PopularPlaces
 class ProvinceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Province
-        fields = ['id', 'name', 'translated_name']
+        fields = ['id', 'name', 'name_en', 'name_ru','name_uz']
 
 
 class DistrictSerializer(serializers.ModelSerializer):
@@ -14,7 +14,7 @@ class DistrictSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = District
-        fields = ['id', 'name', 'translated_name', 'province']
+        fields = ['id', 'name', 'name_en', 'name_ru','name_uz', 'province']
 
 
 class PopularPlacesSerializer(serializers.ModelSerializer):
@@ -22,4 +22,4 @@ class PopularPlacesSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PopularPlaces
-        fields = ['id', 'name', 'translated_name', 'district']
+        fields = ['id', 'name', 'name_en', 'name_ru','name_uz', 'district']
